@@ -1,0 +1,13 @@
+<h1 class ="text-center">文章</h1>
+
+<div class="col-md-4 col-md-offset-4">
+	<%= simple_form_for [@group,@post] do |aa|%>
+		<div class="form-group">
+			<%= aa.input :content, input_html: {class: "form-control"} %>
+		</div>
+		<div class="form-actions">
+			<%= aa.submit "Submit", disable_with: "Submiting...", class: "btn btn-primary"%>
+		</div>
+	<% end %>
+
+</div>
